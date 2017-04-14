@@ -1,0 +1,18 @@
+<footer>
+    {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
+
+    {% if page_paths %}
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for path in page_paths %}
+          {% assign my_page = site.pages | where: "path", path | first %}
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+  {% endif %}
+  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>

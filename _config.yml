@@ -1,1 +1,20 @@
-theme: jekyll-theme-minimal
+title: Indexall.net
+# author: indexall
+# email: indexall.net@gmail.com
+description: 무한 정보 세상을 헤쳐나가기 위한 우리의 자세.
+# twitter_username: indexall
+# github_username:  indexall
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
+show_downloads: false
+google_analytics: UA-79838418-3
+theme: 
+google_adsense: google-adsense.html
