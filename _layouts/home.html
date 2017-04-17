@@ -12,43 +12,30 @@ layout: default
 
   <h2 class="page-heading">Posts</h2>
   <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Start date</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Start date</th>
-            </tr>
-        </tfoot>
-        <tbody>
-          {% for post in site.posts %}
-            <tr>
-              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-              <td><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
-              <td class="post-meta">{{ post.date | date: date_format }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-    </table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Start date</th>
+        </tr>
+    </thead>
+    <!--<tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Start date</th>
+        </tr>
+    </tfoot>-->
+    <tbody>
+      {% for post in site.posts %}
+        <tr>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <td><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+          <td class="post-meta">{{ post.date | date: date_format }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!--{{ content }}-->
 
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/rss.xml" | relative_url }}">via RSS</a></p>-->
 
