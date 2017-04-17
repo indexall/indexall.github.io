@@ -3,9 +3,35 @@ layout: default
 ---
 
 <div class="home">
+  <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+  </script>
 
   <h2 class="page-heading">Posts</h2>
-  
+  <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Start date</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Start date</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>System Architect</td>
+                <td>2011/04/25</td>
+            </tr>
+        </tbody>
+    </table>
+
   {{ content }}
 
   <ul class="post-list">
