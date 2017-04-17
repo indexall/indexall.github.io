@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll 시작하기"
+title: "Markdown 지원하는 Github page 사용하기"
 categories: memo
 author: "indexall"
 meta: "jekyll"
