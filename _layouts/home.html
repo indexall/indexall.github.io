@@ -25,10 +25,13 @@ layout: default
             </tr>
         </tfoot>
         <tbody>
+          {% for post in site.posts %}
             <tr>
-                <td>System Architect</td>
-                <td>2011/04/25</td>
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <td><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+              <td class="post-meta">{{ post.date | date: date_format }}</td>
             </tr>
+          {% endfor %}
         </tbody>
     </table>
 
