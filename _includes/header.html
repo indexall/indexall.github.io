@@ -1,7 +1,9 @@
 <header>
   <a class="site-title" href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
   <p>{{ site.description | escape }}</p>
+  <p>
   {% if site.google_adsense %}
     {% include google-adsense.html %}
   {% endif %}
+  </p>
 </header>
