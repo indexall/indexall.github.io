@@ -11,10 +11,11 @@ layout: default
     $(document).ready(function() {
       $('#example').DataTable( {
           // "order": [[ 1, "desc" ]],
-          // "pageLength": 50,
+        
           // "pagingType": "simple",
           // "searching": true
         "paging":   true,
+        "pageLength": 25,
         "ordering": false,
         "info":     true
       } );
