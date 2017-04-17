@@ -1,4 +1,8 @@
 <footer>
+    {% if site.google_adsense %}
+    {% include google-adsense.html %}
+    {% endif %}
+
     {% assign default_paths = site.pages | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
 
