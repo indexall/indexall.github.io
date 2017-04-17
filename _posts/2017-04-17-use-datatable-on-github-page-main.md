@@ -30,10 +30,6 @@ github page로 블로그를 바꾸면서 메인페이지를 어떻게 처리할�
 ### 적용
 메인 페이지(나의 경우 home.html) 수정   
 ```
----
-layout: default
----
-
 <div class="home">
   <script src="/assets/js/jquery-1.12.4.js"></script>
   <script src="/assets/js/jquery.dataTables.min.js"></script>
