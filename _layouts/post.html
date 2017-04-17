@@ -17,12 +17,12 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-    </br>
-    <a class="page-link" href="/">back</a>
   </div>
   {% if site.google_adsense %}
     {% include google-adsense.html %}
   {% endif %}
+  </br>
+  <a class="page-link" href="/">Back to the main</a>
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
