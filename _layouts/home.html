@@ -35,8 +35,8 @@ layout: default
       {% for post in site.posts %}
         <tr>
           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <td><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
-          <td class="post-meta">{{ post.date | date: date_format }}</td>
+          <td><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+          <td>{{ post.date | date: date_format }}</td>
         </tr>
       {% endfor %}
     </tbody>
