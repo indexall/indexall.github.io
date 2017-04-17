@@ -5,8 +5,12 @@ layout: default
 <div class="home">
   <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
   <script>
+
     $(document).ready(function() {
-        $('#example').DataTable();
+      $('#example').DataTable( {
+          "paging":   true,
+          "searching": true
+      } );
     } );
   </script>
 
@@ -14,8 +18,8 @@ layout: default
   <table id="example" class="display" cellspacing="0" width="100%">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Start date</th>
+            <th>Title</th>
+            <th>date</th>
         </tr>
     </thead>
     <!--<tfoot>
