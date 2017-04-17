@@ -30,7 +30,7 @@ github page로 블로그를 바꾸면서 메인페이지를 어떻게 처리할�
 ### 적용
 메인 페이지(나의 경우 home.html) 수정   
 ```
-<!--<div class="home">
+<div class="home">
   <script src="/assets/js/jquery-1.12.4.js"></script>
   <script src="/assets/js/jquery.dataTables.min.js"></script>
   
@@ -53,17 +53,17 @@ github page로 블로그를 바꾸면서 메인페이지를 어떻게 처리할�
             <th>date</th>
         </tr>
     </thead>
-    <tbody>
-      {% for post in site.posts %}
-        <tr>
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <td><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
-          <td>{{ post.date | date: date_format }}</td>
-        </tr>
-      {% endfor %}
-    </tbody>
+//    <tbody>
+//      {% for post in site.posts %}
+//        <tr>
+//          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+//          <td><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+//          <td>{{ post.date | date: date_format }}</td>
+//        </tr>
+//      {% endfor %}
+//    </tbody>
   </table>
-</div>-->
+</div>
 ```
 
 ### 결과
