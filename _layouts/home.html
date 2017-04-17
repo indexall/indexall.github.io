@@ -10,6 +10,7 @@ layout: default
 
     $(document).ready(function() {
       $('#example').DataTable( {
+          "order": [[ 1, "desc" ]],
           "pagingType": "simple",
           "searching": true
       } );
