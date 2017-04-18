@@ -18,17 +18,14 @@ Spring으로 hello world RESTful 웹서비스를 만드는 과정을 정리함.
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 - 환경변수에 JAVA_HOME 추가
-  JAVA_HOME : c:\Program Files\Java\jdk1.8.0_121
-
+  JAVA_HOME : c:\Program Files\Java\jdk1.8.0_121   
 - path에 %JAVA_HOME%\bin 추가
 
 ### Spring Tool Suite
-Spring tool 다운로드
-[http://spring.io/tools](http://spring.io/tools)
-
-spring-tool-suite-3.8.3.RELEASE-e4.6.2-win32.zip 압축을 적당한 경로에 푼다
-
-sts-bundle\sts-3.8.3.RELEASE\sts.exe 실행
+1. Spring tool 다운로드
+   [http://spring.io/tools](http://spring.io/tools)   
+2. spring-tool-suite-3.8.3.RELEASE-e4.6.2-win32.zip 압축을 적당한 경로에 푼다
+3. sts-bundle\sts-3.8.3.RELEASE\sts.exe 실행
 
 ## 코드 작성
 ### 프로젝트 생성
