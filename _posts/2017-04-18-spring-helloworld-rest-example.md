@@ -8,8 +8,8 @@ meta: "spring helloworld restful api"
 Spring으로 hello world RESTful 웹서비스를 만드는 과정을 정리함.
 
 스프링 사이트의 예제 문서로 원문은 아래와 같음
-
 [https://spring.io/guides/gs/rest-service/](https://spring.io/guides/gs/rest-service/)
+
 
 ## 설치
 ### JDK 설치
@@ -68,6 +68,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 @RestController
 public class GreetingController {
     private static final String template = "Hello, %s!";
@@ -81,7 +82,29 @@ public class GreetingController {
 
 ```
 
+### Application 실행부분은 자동 작성된 내용 그대로 사용
+```
+package hello;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HelloApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HelloApplication.class, args);
+	}
+}
+
+```
+
 ## 테스트
 1. 프로젝트에서 오른쪽 마우스 버튼 클릭
 2. Run As > Spring Boot App 실행
 3. 서버가 띄워지면 [http://localhost:8080/greeting](http://localhost:8080/greeting) 에 접속하여 확인
+
+
+## 참고 사이트
+https://spring.io/guides/gs/rest-service/
+
