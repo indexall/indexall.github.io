@@ -85,8 +85,3 @@ public class GreetingController {
 1. 프로젝트에서 오른쪽 마우스 버튼 클릭
 2. Run As > Spring Boot App 실행
 3. 서버가 띄워지면 [http://localhost:8080/greeting](http://localhost:8080/greeting) 에 접속하여 확인
-
-
-## 참고 사이트
-https://spring.io/guides/gs/rest-service/
-
