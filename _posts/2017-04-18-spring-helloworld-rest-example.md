@@ -7,6 +7,10 @@ meta: "spring helloworld restful api"
 ---
 Spring으로 hello world RESTful 웹서비스를 만드는 과정을 정리함.
 
+스프링 사이트의 예제 문서로 원문은 아래와 같음
+
+[https://spring.io/guides/gs/rest-service/](https://spring.io/guides/gs/rest-service/)
+
 ## 설치
 ### JDK 설치
 자기 시스템환경에 맞는 JDK 설치
