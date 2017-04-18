@@ -8,6 +8,7 @@ meta: "spring helloworld restful api"
 Spring으로 hello world RESTful 웹서비스를 만드는 과정을 정리함.
 
 스프링 사이트의 예제 문서로 원문은 아래와 같음
+
 [https://spring.io/guides/gs/rest-service/](https://spring.io/guides/gs/rest-service/)
 
 
@@ -83,6 +84,7 @@ public class GreetingController {
 ```
 
 ### Application 실행부분은 자동 작성된 내용 그대로 사용
+HelloApplication.java
 ```
 package hello;
 
