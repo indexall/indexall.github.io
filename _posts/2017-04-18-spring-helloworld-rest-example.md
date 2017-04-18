@@ -5,9 +5,10 @@ categories: memo
 author: "indexall"
 meta: "spring helloworld restful api"
 ---
+Spring으로 hello world RESTful 웹서비스를 만드는 과정을 정리함.
 
-### 설치
-#### JDK
+## 설치
+### JDK 설치
 자기 시스템환경에 맞는 JDK 설치
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
@@ -16,7 +17,7 @@ meta: "spring helloworld restful api"
 
 - path에 %JAVA_HOME%\bin 추가
 
-#### Spring Tool Suite
+### Spring Tool Suite
 Spring tool 다운로드
 [http://spring.io/tools](http://spring.io/tools)
 
@@ -24,15 +25,15 @@ spring-tool-suite-3.8.3.RELEASE-e4.6.2-win32.zip 압축을 적당한 경로에 �
 
 sts-bundle\sts-3.8.3.RELEASE\sts.exe 실행
 
-### Helloworld
-#### 프로젝트 생성
+## 코드 작성
+### 프로젝트 생성
 1. package explorer 위에서 우클릭하여 New > Spring starter Project 클릭
 2. 프로젝트 정보 입력(본 포스트  소스를 그대로 사용하려면 Demo로 입력된 부분을 hello로 변경)
 3. New Spring Starter Project Dependencies 에서 Web > Web 체크
 4. Finish
 
 
-#### resource representation class 생성
+### resource representation class 생성
 Greeting.java
 ```
 package hello;
@@ -53,7 +54,7 @@ public class Greeting {
 }
 
 ```
-#### resource controller 생성
+### resource controller 생성
 
 GreetingController.java
 ```
@@ -76,7 +77,7 @@ public class GreetingController {
 
 ```
 
-### 테스트
+## 테스트
 1. 프로젝트에서 오른쪽 마우스 버튼 클릭
 2. Run As > Spring Boot App 실행
 3. 서버가 띄워지면 [http://localhost:8080/greeting](http://localhost:8080/greeting) 에 접속하여 확인
