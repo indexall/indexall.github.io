@@ -32,7 +32,7 @@ Spring으로 hello world RESTful 웹서비스를 만드는 과정을 정리함.
 
 ### resource representation class 생성
 Greeting.java
-```
+```java
 package hello;
 
 public class Greeting {
@@ -54,7 +54,7 @@ public class Greeting {
 ### resource controller 생성
 
 GreetingController.java
-```
+```java
 package hello;
 
 import java.util.concurrent.atomic.AtomicLong;
@@ -77,7 +77,7 @@ public class GreetingController {
 
 ### Application 실행부분은 자동 작성된 내용 그대로 사용
 HelloApplication.java
-```
+```java
 package hello;
 
 import org.springframework.boot.SpringApplication;
