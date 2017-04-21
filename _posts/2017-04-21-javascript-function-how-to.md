@@ -13,7 +13,7 @@ javascript (function())() 이해
 })();
 ```
 
-## 함수를 만드는 방법
+## Javascript에서 함수를 만드는 방법
 ### 함수선언식(function declaration)
 스크립트가 로딩되는 시점에 바로 초기화하고 이를 VO(variable object)에 저장, 따라서 함수 선언의 위치와는 상관없이 소스 내 어느 곳에서든지 호출이 가능
 
