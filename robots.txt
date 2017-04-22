@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /search
+Allow: /
+
+Sitemap: http://indexall.net/sitemap.xml
+Sitemap: http://www.indexall.net/sitemap.xml
